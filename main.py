@@ -1,7 +1,9 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
+import os
 
+st.write(os.environ.get('PASS'))
 if "file_list" not in st.session_state:
     st.session_state["file_list"] = []
 
